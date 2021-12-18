@@ -1,0 +1,27 @@
+.designer__container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 50rem;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-style: double;
+}
+
+.designer__img {
+  padding: 2rem;
+  height: 22rem;
+  width: 90%;
+}
+
+.designer_head {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.designer_details {
+  font-size: 2rem;
+}

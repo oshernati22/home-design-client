@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  padding: 2rem 5rem 0rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 644px) {
+  .App {
+    padding: 2rem 0rem 0rem 0rem;
+  }
+}

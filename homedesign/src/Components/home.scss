@@ -1,0 +1,36 @@
+@import "../index.scss";
+.img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#f6f1eb, 0.8),
+      rgba(#0083b0, 0.6)
+    ),
+    url("../chairs.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60rem;
+  width: 130rem;
+  margin: 4rem 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg);
+  }
+}
+
+.heading {
+  font-size: 5rem;
+  color: whitesmoke;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subheading {
+  font-size: 3rem;
+  color: whitesmoke;
+
+  padding-top: 1rem;
+}
