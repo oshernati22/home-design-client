@@ -14,28 +14,30 @@ const Threeobj = (props) => {
           marginTop: "2rem",
         }}
       />
-      <model-viewer
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        camera-controls
-        src={props.glb}
-        alt="A 3D model of an astronaut"
-        id="threeobj"
-      >
-        <button
-          slot="ar-button"
-          style={{
-            backgroundColor: "white",
-            borderRadius: "4px",
-            border: "none",
-            position: "absolute",
-            top: "16px",
-            right: "16px",
-          }}
+      <div>
+        <model-viewer
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          src={props.glb}
+          alt="A 3D model of an astronaut"
+          id="threeobj"
         >
-          👋 Activate AR
-        </button>
-      </model-viewer>
+          <button
+            slot="ar-button"
+            style={{
+              backgroundColor: "white",
+              borderRadius: "4px",
+              border: "none",
+              position: "absolute",
+              top: "16px",
+              right: "16px",
+            }}
+          >
+            👋 Activate AR
+          </button>
+        </model-viewer>
+      </div>
     </div>
   );
 };

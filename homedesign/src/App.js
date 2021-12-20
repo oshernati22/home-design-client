@@ -1,7 +1,7 @@
 import "./App.scss";
 import Nav from "./Components/Nav";
 import Header from "./Components/Header";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import ShowRoom from "./Components/ShowRoom";
 import DesignerPage from "./Components/DesignerPage";

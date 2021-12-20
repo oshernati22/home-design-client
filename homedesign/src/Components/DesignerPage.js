@@ -29,7 +29,11 @@ const DesignerPage = () => {
     return (
       <div className="designer__container">
         <div>
-          <img className="designer__img" src={designerData.photo} />
+          <img
+            className="designer__img"
+            alt="designer Img"
+            src={designerData.photo}
+          />
           <hr></hr>
         </div>
         <div className="designer_head">{designerData.title}</div>

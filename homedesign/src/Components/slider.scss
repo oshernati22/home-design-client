@@ -6,9 +6,7 @@
   border-color: #f6f1eb;
 }
 .carusel__object {
-  border-style: solid;
-  border-width: 0.3px;
-  border-color: #f6f1eb;
-  @include respond(tab-port) {
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

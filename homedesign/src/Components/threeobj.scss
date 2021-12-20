@@ -2,11 +2,9 @@
 #threeobj {
   height: 50rem;
   width: 40rem;
-  margin-left: 12rem;
-  @include respond(tab-port) {
-    height: 40rem;
-    width: 30rem;
-    margin-left: 13rem;
+  @include respond(phone) {
+    height: 30rem;
+    width: 20rem;
   }
 }
 
@@ -20,10 +18,16 @@
   font-size: 3rem;
   color: #cbcbcb;
   margin-top: 1rem;
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .obj_details {
   margin-top: 1rem;
   font-size: 2rem;
   color: #cbcbcb;
+  @include respond(phone) {
+    font-size: 1rem;
+  }
 }

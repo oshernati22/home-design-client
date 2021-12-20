@@ -3,7 +3,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Threeobj from "./Threeobj";
 import "./slider.scss";
-import GLD from "../scene.glb";
 
 const Slider = ({ furArr }) => {
   const responsive = {
@@ -35,7 +34,6 @@ const Slider = ({ furArr }) => {
         showDots={true}
         responsive={responsive}
         infinite={true}
-        responsive={responsive}
         keyBoardControl={true}
         centerMode={true}
       >

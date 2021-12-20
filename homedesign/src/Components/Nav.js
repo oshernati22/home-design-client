@@ -21,7 +21,7 @@ const GET_DESIGNERS_TITELS = gql`
 `;
 
 const Nav = () => {
-  const [categories, setCategories] = useState(["loading", "loading"]);
+  const [categories, setCategories] = useState(["loading"]);
   const { loading: loadingCategories, data: dataCategories } =
     useQuery(GET_FUR_CATEGORIES);
 
@@ -59,7 +59,7 @@ const Nav = () => {
               <li className="nav__li">loading</li>
             ) : (
               categories.map((el) => (
-                <li className="nav__li">
+                <li key={el} className="nav__li">
                   <Link style={{ textDecoration: "none" }} to={`/${el}`}>
                     {el}
                   </Link>
@@ -80,7 +80,7 @@ const Nav = () => {
               <li className="nav__li">loading</li>
             ) : (
               dataDesigners.getAllDesigners.map((el) => (
-                <li className="nav__li">
+                <li key={el.title} className="nav__li">
                   <Link
                     style={{ textDecoration: "none" }}
                     to={`/designers/${el.title}`}
