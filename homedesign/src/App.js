@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import ShowRoom from "./Components/ShowRoom";
 import DesignerPage from "./Components/DesignerPage";
+import AdminPage from "./Components/admin/AdminPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 path="/designers/:designer"
                 element={<DesignerPage />}
               />
+              <Route exact path="/admin" element={<AdminPage />} />
             </Routes>
           </div>
         </Router>

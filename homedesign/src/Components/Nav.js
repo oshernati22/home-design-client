@@ -1,24 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SiteNav, { ContentGroup } from "react-site-nav";
 import "../Components/nav.scss";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
-
-const GET_FUR_CATEGORIES = gql`
-  query {
-    getAllFurnitures {
-      category
-    }
-  }
-`;
-
-const GET_DESIGNERS_TITELS = gql`
-  query {
-    getAllDesigners {
-      title
-    }
-  }
-`;
+import { GET_FUR_CATEGORIES, GET_DESIGNERS_TITELS } from "../GraphQl/Queries";
 
 const Nav = () => {
   const [categories, setCategories] = useState(["loading"]);
@@ -51,7 +36,20 @@ const Nav = () => {
         contentTop="0"
         contentColor="black"
       >
-        <ContentGroup title="Home"></ContentGroup>
+        <ContentGroup title="Home" height="120">
+          <ul>
+            <li className="nav__li">
+              <Link to="/" style={{ textDecoration: "none" }}>
+                Home Page
+              </Link>
+            </li>
+            <li className="nav__li">
+              <Link to="/admin" style={{ textDecoration: "none" }}>
+                Admin
+              </Link>
+            </li>
+          </ul>
+        </ContentGroup>
         <ContentGroup title="Show Room" height={categories.length * 60}>
           <div className="subheader">Choose Category</div>
           <ul className="nav__ul">
@@ -90,14 +88,6 @@ const Nav = () => {
                 </li>
               ))
             )}
-          </ul>
-        </ContentGroup>
-        <ContentGroup title="Company" height="200">
-          <ul>
-            <li className="nav__li">About Show Room</li>
-            <li className="nav__li">Careers</li>
-            <li className="nav__li">Contact</li>
-            <li className="nav__li">Admin</li>
           </ul>
         </ContentGroup>
       </SiteNav>

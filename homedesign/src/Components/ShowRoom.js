@@ -27,7 +27,11 @@ const ShowRoom = () => {
     furByCategories = data.getAllFurnitures.filter(
       (el) => el.category === category
     );
-    return <Slider furArr={furByCategories} />;
+    return (
+      <>
+        <Slider furArr={furByCategories} />
+      </>
+    );
   }
 };
 
