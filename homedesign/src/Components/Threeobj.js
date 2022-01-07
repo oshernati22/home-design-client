@@ -1,5 +1,5 @@
 import React from "react";
-
+import chair from "./chair.glb";
 import "./threeobj.scss";
 
 const Threeobj = (props) => {
@@ -19,7 +19,7 @@ const Threeobj = (props) => {
           ar
           ar-modes="webxr scene-viewer quick-look"
           camera-controls
-          src={props.glb}
+          src={props.glb || chair}
           alt="A 3D model of an astronaut"
           id="threeobj"
         >
