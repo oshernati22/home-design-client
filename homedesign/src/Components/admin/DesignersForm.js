@@ -57,7 +57,6 @@ const DesignersForm = () => {
         photo: img.secure_url,
       },
     });
-
     if (error) {
       console.log(error);
     }
@@ -71,39 +70,39 @@ const DesignersForm = () => {
       <>{loading}</>
       <form className="form" onSubmit={handleSubmit}>
         <div className="label__container">
-          <label className="label">Enter Designer Title: </label>
           <input
             className="input"
             type="text"
             name="title"
+            placeholder="Enter Designer Title"
             onChange={handleTitleChange}
           />
         </div>
         <div className="label__container">
-          <label className="label">Enter Designer Description: </label>
           <input
             className="input"
             type="text"
             name="description"
+            placeholder="Enter Designer Description"
             onChange={handleDescriptionChange}
           />
         </div>
         <div className="label__container">
-          <label className="label">Enter Designer website:</label>
           <input
             className="input"
             type="text"
             name="url"
+            placeholder="Enter Designer Url"
             onChange={handleUrlChange}
           />
         </div>
         <div className="label__container">
-          <label className="label">Enter Designer Photo :</label>
           <input
             placeholder="Upload File"
             className="input"
             type="file"
             name="file"
+            placeholder="Enter Designer Photo"
             onChange={handleImg}
           />
         </div>

@@ -1,7 +1,8 @@
 @import "../index.scss";
 #threeobj {
   height: 50rem;
-  width: 40rem;
+  flex-basis: 50%;
+  flex-shrink: 1;
   @include respond(phone) {
     height: 30rem;
     width: 20rem;

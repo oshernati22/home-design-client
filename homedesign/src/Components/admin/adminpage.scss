@@ -1,8 +1,18 @@
 .admin__container {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 3rem auto;
+  background-color: gray;
+  width: 80%;
+}
+.admin__grid {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  row-gap: 4rem;
+  column-gap: 5rem;
+  background-color: blue;
 }
 
 .admin__header {
